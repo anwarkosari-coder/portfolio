@@ -113,9 +113,10 @@ a:hover {
    CONTAINER & LAYOUT
    ===================================================== */
 .container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 24px;
 }
 
 section {
@@ -141,6 +142,10 @@ section:first-of-type {
     width: 100%;
     z-index: 1000;
     padding: 1rem 0;
+}
+.navbar .container{
+    max-width: 100%;
+    padding: 0 100px;
 }
 
 .navbar-content {
@@ -1358,6 +1363,106 @@ section:first-of-type {
 
 .footer-link:hover {
     color: var(--primary);
+}
+
+/* =====================================================
+   PROCESS SECTION
+   ===================================================== */
+.process {
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, rgba(34, 197, 94, 0.02) 100%);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.process-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 1.25rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.process-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--primary);
+    box-shadow: 0 30px 60px -15px rgba(99, 102, 241, 0.35);
+}
+
+.process-card:hover::before {
+    opacity: 1;
+}
+
+.process-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.process-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(34, 197, 94, 0.15));
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    border: 1.5px solid rgba(99, 102, 241, 0.2);
+    transition: var(--transition);
+}
+
+.process-card:hover .process-icon {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    transform: scale(1.15) rotate(-8deg);
+    border-color: var(--accent);
+}
+
+.process-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.process-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* =====================================================

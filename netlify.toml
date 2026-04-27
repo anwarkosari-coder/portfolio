@@ -1,0 +1,61 @@
+# Netlify Configuration
+# Deploy this portfolio to Netlify: https://netlify.com
+
+[build]
+  # No build command needed for static sites
+  command = ""
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "16"
+
+# Redirects for SPA-like behavior (if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache settings
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    
+    # CORS headers (if needed)
+    Access-Control-Allow-Origin = "*"
+    
+    # Cache control
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/script.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "text/javascript"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "text/html; charset=utf-8"
+
+# Gzip compression
+[context.production.environment]
+  GZIP = "true"
+
+# 404 page handling
+[[redirects]]
+  from = "/404"
+  to = "/index.html"
+  status = 404

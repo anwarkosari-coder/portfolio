@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-anwar",
+  "version": "1.0.0",
+  "description": "Portfolio landing page for Anwar AIT EL KOSARI - Web Developer & Freelancer",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'This is a static site, no build needed!'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "portfolio",
+    "landing-page",
+    "web-developer",
+    "freelancer",
+    "responsive-design",
+    "seo-optimized",
+    "dark-theme"
+  ],
+  "author": "Anwar AIT EL KOSARI",
+  "license": "All rights reserved",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anwar/portfolio.git"
+  },
+  "homepage": "https://anwar.dev"
+}

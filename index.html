@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anwar AIT EL KOSARI - Développeur Web Freelance. Créez des sites web modernes, rapides et rentables qui transforment vos visiteurs en clients. Spécialiste en design web professionnel et conversion.">
+    <meta name="keywords" content="développeur web, freelancer, création site web, landing page, design responsive, agence web Maroc, développeur indépendant">
+    <meta name="author" content="Anwar AIT EL KOSARI">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="Anwar AIT EL KOSARI - Développeur Web & Freelance Premium">
+    <meta property="og:description" content="Sites web modernes & responsifs. Transformez vos visiteurs en clients avec un design professionnel et optimisé pour la conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://anwairdev.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anwar AIT EL KOSARI - Développeur Web Premium">
+    <meta name="twitter:description" content="Création de sites web modernes, rapides et orientés conversion.">
+    <meta name="twitter:image" content="https://anwairdev.com/images/og-image.jpg">
+    <link rel="canonical" href="https://anwairdev.com/">
+    
+    <title>Anwar AIT EL KOSARI - Développeur Web Freelance Premium | Design & Conversion</title>
+    
+    <!-- Critical inline CSS for above-the-fold -->
+    <style>
+        :root { --bg-primary: #0f172a; --text-primary: #f1f5f9; --primary: #6366f1; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); margin: 0; padding: 0; overflow-x: hidden; }
+        .navbar { background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; width: 100%; z-index: 1000; padding: 1rem 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        h1 { font-size: 3.5rem; margin-bottom: 1.5rem; font-weight: 800; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.875rem 1.75rem; border: none; border-radius: 0.5rem; font-weight: 600; font-size: 1rem; cursor: pointer; text-decoration: none; }
+    </style>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts (Optimized with font-display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library (Animate On Scroll) - Deferred loading -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Anwar AIT EL KOSARI - Développeur Web",
+        "description": "Développeur web freelance spécialisé dans la création de sites modernes, rapides et optimisés pour la conversion",
+        "image": "https://anwairdev.com/images/logo.png",
+        "url": "https://anwairdev.com",
+        "telephone": "+212649925494",
+        "areaServed": ["MA", "FR", "CA"],
+        "priceRange": "$$",
+        "sameAs": [
+            "https://wa.me/212649925494"
+        ],
+        "award": [
+            "100% Clients Satisfaits",
+            "50+ Projets Complétés",
+            "3+ Années d'Expérience"
+        ]
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Création de Sites Web Professionnels",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Anwar AIT EL KOSARI"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Morocco"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services de Développement Web",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Création de Sites Vitrines",
+                        "description": "Sites web professionnels et modernes pour présenter votre entreprise"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Landing Pages Conversion-Focused",
+                        "description": "Pages optimisées pour convertir visiteurs en clients"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sites Web pour Entreprises",
+                        "description": "Solutions web complètes adaptées à vos besoins"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo" role="img" aria-label="ANWAR.DEV - Développeur Web Freelance">
+                    <div class="logo-brand">
+                        <span class="logo-text">ANWAR</span><span class="logo-dot">.</span><span class="logo-dev">DEV</span>
+                    </div>
+                    <span class="logo-tagline">Building modern websites</span>
+                </div> 
+                
+                <div class="nav-toggle" id="navToggle" aria-label="Menu de navigation" aria-controls="navMenu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Accueil</a></li>
+                    <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projets</a></li>
+                    <li role="none"><a href="#results" class="nav-link" role="menuitem">Résultats</a></li>
+                    <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                    <li role="none"><a href="#why-service" class="nav-link" role="menuitem">Pourquoi moi</a></li>
+                    <li role="none"><a href="#reviews" class="nav-link" role="menuitem">Avis</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-duration="800">
+                    <!-- <h1><span class="highlight">Votre site web premium</span><br>qui génère des clients</h1> -->
+                     <h1><span class="highlight">Nous créons des sites web qui</span><br>attirent, convainquent et vendent</h1>
+                    <div class="typing-container" role="status" aria-live="polite">
+                        <p class="typing-text">
+                            <span class="typing-word">Conception Professionnelle</span>
+                        </p>
+                    </div>
+                    <p class="hero-description">
+                        Transformez votre présence digitale avec un site web moderne, ultra-rapide et conçu pour convertir. Design captivant + Performance maximale = Plus de clients
+                    </p>
+                    <div class="cta-buttons" role="group" aria-label="Actions principales">
+                        <a href="https://wa.me/212649925494?text=Bonjour%20Anwar%2C%20je%20suis%20intéressé%20par%20vos%20services%20web" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Discuter sur WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.267-3.456 6.66-1.193 9.72 2.262 3.06 6.66 3.457 9.72 1.193 3.061-2.263 3.456-6.66 1.193-9.72a9.9 9.9 0 00-4.685-2.571zm11.772-5.756c-5.017-5.556-13.037-5.556-18.055 0-5.018 5.558-5.018 14.58 0 20.137 5.018 5.558 13.037 5.557 18.055 0 5.017-5.558 5.017-14.579 0-20.137z"/>
+                            </svg>
+                            Demander un devis
+                        </a>
+                        <a href="#projects" class="btn btn-secondary" aria-label="Découvrir mes réalisations">Voir nos projets</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" role="img" aria-label="Illustration d'un développeur web travaillant sur un ordinateur">
+                    <div class="image-wrapper">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Gradient background -->
+                            <defs>
+                                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.1" />
+                                    <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.1" />
+                                </linearGradient>
+                                <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.2" />
+                                    <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.2" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Animated background shapes -->
+                            <circle cx="200" cy="200" r="180" fill="url(#bgGradient)" opacity="0.3"/>
+                            
+                            <!-- Profile placeholder with tech symbols -->
+                            <g class="profile-group">
+                                <!-- Avatar circle -->
+                                <circle cx="200" cy="150" r="80" fill="url(#cardGradient)" stroke="#6366f1" stroke-width="2"/>
+                                
+                                <!-- Dev icon -->
+                                <g transform="translate(170, 120)">
+                                    <rect x="0" y="0" width="40" height="40" rx="4" fill="#6366f1" opacity="0.8"/>
+                                    <text x="20" y="28" font-size="24" font-weight="bold" fill="white" text-anchor="middle">&lt;/&gt;</text>
+                                </g>
+                                
+                                <!-- Code symbols around avatar -->
+                                <text x="320" y="150" font-size="32" fill="#22c55e" opacity="0.6">{}</text>
+                                <text x="80" y="150" font-size="28" fill="#6366f1" opacity="0.6">[ ]</text>
+                                <text x="200" y="300" font-size="24" fill="#22c55e" opacity="0.5">npm</text>
+                            </g>
+                            
+                            <!-- Tech stack indicators -->
+                            <g class="tech-stack" opacity="0.7">
+                                <rect x="280" y="240" width="90" height="30" rx="4" fill="none" stroke="#6366f1" stroke-width="2"/>
+                                <text x="325" y="260" font-size="12" fill="#6366f1" text-anchor="middle" font-weight="500">HTML/CSS/JS</text>
+                                
+                                <rect x="30" y="240" width="90" height="30" rx="4" fill="none" stroke="#22c55e" stroke-width="2"/>
+                                <text x="75" y="260" font-size="12" fill="#22c55e" text-anchor="middle" font-weight="500">Responsive</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Mes Réalisations</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Projets qui ont transformé des entreprises en succès digitaux</p>
+            
+            <div class="projects-carousel">
+                <div class="projects-slider" id="projectsSlider">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="images/project1.png" alt="Cabinet Juridique" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Cabinet Juridique</h3>
+                            <p>Site vitrine professionnel pour cabinet d'avocats avec présentation services et prise de rendez-vous</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="images/project2.png" alt="Restaurant Moderne" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Restaurant moderne</h3>
+                            <p>Landing page avec menu interactif, galerie photos et système de réservation en ligne</p>
+                            <div class="project-tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">UX</span>
+                                <span class="tag">Animation</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="images/project3.png" alt="Parapharmacie" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Parapharmacie</h3>
+                            <p>Site informatif pour une parapharmacie avec présentation des produits et services, conseils santé et contact rapide</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="images/project4.png" alt="Cabinet Dentaire" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Cabinet Dentaire</h3>
+                            <p>Site vitrine pour cabinet dentaire avec présentation des soins, prise de rendez-vous, témoignage clients et localisation ducabinet</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="images/project5.png" alt="Agence Immobilière" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Agence Immobilière</h3>
+                            <p>Site vitrine pour agence immobilière avec présentation des biens, galerie photos, fiches détaillées et formulaire de demande d'information </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="images/project6.png" alt="Salle de sport" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Salle de sport / fitnesse</h3>
+                            <p>Site vitrine dynamique pour salle de sport avec présentation des abonnements, planning des cours, galerie transformations et contact rapide via whatsapp</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="images/project7.png" alt="Salon de beauté" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Salon de beauté</h3>
+                            <p>Site vitrine élégant pour salon de beauté avec présentation des services, tarifs, galerie photos et réservation rapide</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Voir le projet →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="carousel-controls">
+                    <button class="carousel-nav prev" id="projectsPrev" aria-label="Projet précédent">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="carousel-nav next" id="projectsNext" aria-label="Projet suivant">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Results Section -->
+    <section class="stats" id="results">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Résultats Vérifiés</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Des chiffres qui prouvent l'impact réel de nos services</p>
+            
+            <div class="stats-grid">
+                <!-- Stat 1 -->
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-number" data-target="50">0</div>
+                    <p class="stat-label">Projets Complétés</p>
+                    <p class="stat-description">Sites web de qualité livrés avec succès</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-number" data-target="100">0</div>
+                    <p class="stat-label">Clients Satisfaits %</p>
+                    <p class="stat-description">Satisfaction garantie à 100%</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-number" data-target="3">0</div>
+                    <p class="stat-label">Années d'Expérience</p>
+                    <p class="stat-description">Expertise confirmée et reconnue</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Services Complètes</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Solutions web professionnelles pour transformer votre entreprise</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                            <line x1="15" y1="3" x2="15" y2="21"></line>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="3" y1="15" x2="21" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Création de Sites Vitrines</h3>
+                    <p>Des sites modernes et professionnels pour présenter votre entreprise, attirer des clients et renforcer votre crédibilité online</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Pages d'atterrissage optimisées pour convertir visiteurs en clients avec design captivant et CTA efficaces</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h3>Sites pour Entreprises</h3>
+                    <p>Solutions web complètes adaptées aux besoins spécifiques de votre industrie avec performance maximale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="why-service" id="why-service">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Pourquoi Travailler Avec Moi</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Voyez la différence que je peux faire pour votre business</p>
+            
+            <div class="why-service-grid">
+                <!-- With Me -->
+                <div class="why-service-column with-me" data-aos="fade-right" data-aos-duration="800">
+                    <h3 class="column-title">
+                        <span class="check-icon">✓</span> Avec Moi
+                    </h3>
+                    <ul class="benefits-list">
+                        <li class="benefit-item" data-aos="fade-up" data-aos-delay="150">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                            <div>
+                                <h4>Site Web Professionnel</h4>
+                                <p>Design moderne qui impressionne vos visiteurs</p>
+                            </div>
+                        </li>
+                        <li class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                            <div>
+                                <h4>Plus de Clients</h4>
+                                <p>Présence digitale forte = conversions accrues</p>
+                            </div>
+                        </li>
+                        <li class="benefit-item" data-aos="fade-up" data-aos-delay="250">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                            <div>
+                                <h4>Présence Online Dominante</h4>
+                                <p>Vous vous distinguez de vos concurrents</p>
+                            </div>
+                        </li>
+                        <li class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                            <div>
+                                <h4>Support Continu</h4>
+                                <p>Je reste à votre côté après la livraison</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Without Me -->
+                <div class="why-service-column without-me" data-aos="fade-left" data-aos-duration="800">
+                    <h3 class="column-title">
+                        <span class="x-icon">✕</span> Sans Moi
+                    </h3>
+                    <ul class="problems-list">
+                        <li class="problem-item" data-aos="fade-up" data-aos-delay="150">
+                            <svg class="problem-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                            <div>
+                                <h4>Site Faible ou Absent</h4>
+                                <p>Perte de crédibilité et de confiance client</p>
+                            </div>
+                        </li>
+                        <li class="problem-item" data-aos="fade-up" data-aos-delay="200">
+                            <svg class="problem-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                            <div>
+                                <h4>Perdre des Clients</h4>
+                                <p>Vos concurrents les captent avec de meilleurs sites</p>
+                            </div>
+                        </li>
+                        <li class="problem-item" data-aos="fade-up" data-aos-delay="250">
+                            <svg class="problem-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                            <div>
+                                <h4>Opportunités Manquées</h4>
+                                <p>Chiffre d'affaires bloqué, croissance limitée</p>
+                            </div>
+                        </li>
+                        <li class="problem-item" data-aos="fade-up" data-aos-delay="300">
+                            <svg class="problem-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                            <div>
+                                <h4>Rester Invisible Online</h4>
+                                <p>Autres entreprises dominent votre marché</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="why-service-cta" data-aos="fade-up" data-aos-delay="200">
+                <p class="cta-text">Prêt à transformer votre présence digitale?</p>
+                <a href="https://wa.me/212649925494?text=Bonjour%20Anwar%2C%20je%20suis%20intéressé%20par%20vos%20services" class="btn btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.267-3.456 6.66-1.193 9.72 2.262 3.06 6.66 3.457 9.72 1.193 3.061-2.263 3.456-6.66 1.193-9.72a9.9 9.9 0 00-4.685-2.571zm11.772-5.756c-5.017-5.556-13.037-5.556-18.055 0-5.018 5.558-5.018 14.58 0 20.137 5.018 5.558 13.037 5.557 18.055 0 5.017-5.558 5.017-14.579 0-20.137z"/>
+                    </svg>
+                    Démarrer Mon Projet Maintenant
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (NEW) -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Avis Clients</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Ce que mes clients disent de mon travail</p>
+            
+            <div class="reviews-carousel">
+                <div class="reviews-slider" id="reviewsSlider">
+                    <!-- Review 1 -->
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="review-header">
+                            <div class="review-avatar">SA</div>
+                            <div class="review-info">
+                                <h4>Sara Bennani</h4>
+                                <p class="review-title">Cabinet Juridique</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">Anwar a créé un site magnifique pour mon cabinet. Design professionnel, performances exceptionnelles et très accessible aux clients. Un travail remarquable!</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="review-header">
+                            <div class="review-avatar">MZ</div>
+                            <div class="review-info">
+                                <h4>Mohamed Zaki</h4>
+                                <p class="review-title">Restaurant Moderne</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">Excellent travail! Anwar a compris ma vision et l'a transformée en un site dynamique et attractif. Les réservations en ligne ont augmenté de 40%!</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="review-header">
+                            <div class="review-avatar">FR</div>
+                            <div class="review-info">
+                                <h4>Fatima Rousseau</h4>
+                                <p class="review-title">Parapharmacie</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">Communication fluide, délais respectés et résultat magnifique. Anwar est très professionnel et à l'écoute. Je recommande vivement ses services!</p>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="review-header">
+                            <div class="review-avatar">AH</div>
+                            <div class="review-info">
+                                <h4>Ahmed Hassan</h4>
+                                <p class="review-title">E-commerce</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">Anwar a transformé ma présence en ligne. Site ultra-rapide, design moderne et responsive. Les conversions ont doublé. Merci!</p>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="review-header">
+                            <div class="review-avatar">LC</div>
+                            <div class="review-info">
+                                <h4>Leila Cherif</h4>
+                                <p class="review-title">Consultant Immobilier</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">Professionnel, créatif et très réactif. Anwar a créé un site qui me distingue de mes concurrents. Investissement excellent!</p>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="carousel-controls">
+                    <button class="carousel-nav prev" id="reviewsPrev" aria-label="Avis précédent">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="carousel-nav next" id="reviewsNext" aria-label="Avis suivant">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in" data-aos-duration="800">
+                <h2>Prêt à Transformer Votre Présence Digitale ?</h2>
+                <p>Commencez votre projet dès aujourd'hui. Consultation gratuite et sans engagement.</p>
+                <a href="https://wa.me/212649925494?text=Bonjour%20Anwar%2C%20je%20suis%20intéressé%20par%20vos%20services%20web" class="btn btn-cta" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.267-3.456 6.66-1.193 9.72 2.262 3.06 6.66 3.457 9.72 1.193 3.061-2.263 3.456-6.66 1.193-9.72a9.9 9.9 0 00-4.685-2.571zm11.772-5.756c-5.017-5.556-13.037-5.556-18.055 0-5.018 5.558-5.018 14.58 0 20.137 5.018 5.558 13.037 5.557 18.055 0 5.017-5.558 5.017-14.579 0-20.137z"/>
+                    </svg>
+                    Démarrer Votre Projet Maintenant
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/212649925494?text=Bonjour%20Anwar%2C%20je%20suis%20intéressé%20par%20vos%20services%20web" class="whatsapp-floating" target="_blank" rel="noopener noreferrer" title="Contactez-moi sur WhatsApp" aria-label="Discuter sur WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.267-3.456 6.66-1.193 9.72 2.262 3.06 6.66 3.457 9.72 1.193 3.061-2.263 3.456-6.66 1.193-9.72a9.9 9.9 0 00-4.685-2.571zm11.772-5.756c-5.017-5.556-13.037-5.556-18.055 0-5.018 5.558-5.018 14.58 0 20.137 5.018 5.558 13.037 5.557 18.055 0 5.017-5.558 5.017-14.579 0-20.137z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Anwar AIT EL KOSARI - Développeur Web Freelance. Tous droits réservés.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.5rem 0 0;">Créé avec passion en Maroc 🇲🇦 | Sites web modernes & performants</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
+    
+    <!-- No-script fallback for users with JavaScript disabled -->
+    <noscript>
+        <p style="text-align: center; padding: 2rem; color: var(--text-secondary);">
+            Ce site fonctionne mieux avec JavaScript activé. Veuillez activer JavaScript dans les paramètres de votre navigateur.
+        </p>
+    </noscript>
+</body>
+</html>

@@ -145,7 +145,7 @@ section:first-of-type {
 }
 .navbar .container{
     max-width: 100%;
-    padding: 0 100px;
+    padding: 0 24px;
 }
 
 .navbar-content {
@@ -1489,6 +1489,13 @@ section:first-of-type {
 
     .navbar-content {
         padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar .container {
+        padding: 0 16px;
     }
 
     .nav-menu {
